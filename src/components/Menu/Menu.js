@@ -3,12 +3,12 @@ import {Route, Link} from 'react-router-dom';
 
 const menus = [
     {
-        name: 'Trang Chủ',
+        name: 'Trang Chủ',
         to: '/',
         exact: true
     },
     {
-        name: 'Quản Lý Sản Phẩm̉',
+        name: 'Quản Lý Sản Phẩm',
         to: '/product-list',
         exact: false
     }
@@ -52,7 +52,7 @@ class Menu extends Component {
     render() {
         return (
             <div className="navbar navbar-default">
-                <a className="navbar-brand">Call API</a>
+                <a href="/" className="navbar-brand">Call API</a>
                 <ul className="nav navbar-nav">
                     {this.showMenu(menus)}
                 </ul>
