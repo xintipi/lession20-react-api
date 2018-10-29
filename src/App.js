@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import './App.css';
 import Menu from './components/Menu/Menu';
 import routes from './routes';
@@ -29,14 +29,14 @@ class App extends Component {
     render() {
         return (
             <Router>
-                <div>
+                <Fragment>
                     <Menu/>
                     <div className="container">
                         <div className="row">
                             {this.showContent(routes)}
                         </div>
                     </div>
-                </div>
+                </Fragment>
             </Router>
         );
     }
